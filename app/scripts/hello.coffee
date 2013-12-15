@@ -203,5 +203,9 @@ $(document).keypress((e) ->
       jumpByNr(key - 48, 10)
     if key is 32
       ballJump()
+    if key is 103 #g
+      $('body').css('background-color':'green')
+    if key is 119 #w
+      $('body').css('background-color':'white')
 
 )
