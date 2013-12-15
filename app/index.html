@@ -15,14 +15,24 @@
         <!-- endbuild -->
     </head>
     <body>
-        <div 
+        <div class="balken" data-box2d-static="true">&nbsp;</div><div id="goal" data-box2d-static="true">&nbsp;</div><div data-box2d-static="true" class="balken">&nbsp;</div><br>
+        <center style="display:none;" id="tor" >Toooooooooor!!!!</center>
+        <img src="/images/fussball.png"
             data-box2d-shape='circle'
             data-box2d-density="0.1"
-            data-box2d-restitution="0.9" 
+            data-box2d-restitution="0.95" 
             data-box2d-friction="0.3"
             data-box2d-passive="true"
-            class="circle"></div>
+            class="fussball" id="ball_1">
+                    <img src="/images/fussball.png"
+            data-box2d-shape='circle'
+            data-box2d-density="0.1"
+            data-box2d-restitution="0.95" 
+            data-box2d-friction="0.3"
+            data-box2d-passive="true"
+            class="fussball" id="ball_2">
         <div id="bottom">
+        
         </div>
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->

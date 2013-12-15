@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background: #fafafa;
+    background: green;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
     padding: 0;
@@ -20,7 +20,7 @@ body {
 
 #bottom {position: absolute; bottom: 0px; width:100%;}
 
-.sound {
+.player {
    display: inline-block;
    border: 1px solid black;
    width: 9%;
@@ -32,6 +32,38 @@ body {
    color: white;
 }
 
+.top { border:0px solid black;}
+
+#goal {
+  /*border: 1px solid white;*/
+  display:inline-block;
+  width: 40%;
+  height: 3px;
+  background-color:white;
+  margin:0;
+  padding:0;
+}
+
+.balken {
+  width:20px; height: 20px;
+  color:white;
+  background-color:white;
+  display:inline-block;
+}
+
+#tor{
+font-size:200%;
+color:white;
+font-weight: bold;
+font-family: cursive;
+}
+
+.collides
+{
+  background-color: black !important;
+  border:1px solid black !important;
+}
+
 .circle {
       border-radius: 50%;
       display: inline-block;
@@ -39,4 +71,23 @@ body {
       height: 50px;
       /*background: yellow;*/
       border:2px solid black !important;
+}
+
+.fussball {
+      border-radius: 50%;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      /*background: yellow;*/
+      border:0px solid black !important;
+      margin:0;
+      padding:0;
+}
+
+#canvasarium {
+  border:1px solid white;
+  position:fixed;
+  left:1px;
+  top:50px;
+  background-color: transparent;
 }
