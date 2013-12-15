@@ -195,17 +195,17 @@ toogleCalcIx = () ->
 $(document).keypress((e) ->
     key = e.keyCode or e.charCode
     console.log(key)
-    if key is 100
+    if key is 100 #d(ebug)
       toogleCanvas()
-    if key is 102
+    if key is 102 #f(requence)
       toogleCalcIx()
-    if (key >= 48 && key <= 57)
+    if (key >= 48 && key <= 57) #0 .. 9
       jumpByNr(key - 48, 10)
-    if key is 32
+    if key is 32 #space
       ballJump()
-    if key is 103 #g
+    if key is 103 #g(reen)
       $('body').css('background-color':'green')
-    if key is 119 #w
+    if key is 119 #w(hite)
       $('body').css('background-color':'white')
 
 )
